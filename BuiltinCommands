@@ -1,0 +1,30 @@
+// This example demonstrates built-in commands.
+//
+VectorSize 8
+
+SigmaY 2
+SigmaX 3
+SigmaZ 4
+QFT 0, 8
+
+// Control execution speed; delay between steps in ms.
+Delay 1000
+
+// Control visualization mode: 0 - 2D, 1 - 2D+Phase, 2 - 3D.
+SetViewMode 0
+SetViewMode 2
+
+// Delay 1 enables full speed execution.
+Delay 1
+
+// Control angle of rotation in 3D mode.
+SetViewAngle Math.PI / 4
+
+// Display HTML string overlayed on state visualization.
+Display "<h1>Hello Quantum!</h1>"
+
+// Output plain string to console window.
+Print "Hello Console."
+
+// Software breakpoint that stops execution.
+Breakpoint
